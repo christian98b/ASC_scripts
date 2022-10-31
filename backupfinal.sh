@@ -8,7 +8,7 @@ FTPSERVER=
 #directory that will be created on ftp and the one that will be deleted
 TODAY=$(date +"%Y_%m_%d")
 RMDATE=$(date +"%Y_%m_%d" -d '7 days ago') 
-TMPDIR=/media/backups
+TMPDIR=/media/backups/sql
 mysql_backup_file=$TMPDIR/backup.sql
 echo -n "Database dump"
 mysqldump -u $mysql_user -p$mysql_password --all-databases > $mysql_backup_file && 

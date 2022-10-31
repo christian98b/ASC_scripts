@@ -8,7 +8,7 @@ FTPSERVER=
 #directory that will be created on ftp and the one that will be deleted
 TODAY=$(date +"%Y_%m_%d")
 RMDATE=$(date +"%Y_%m_%d" -d '7 days ago') 
-TMPDIR=/media/backups
+TMPDIR=/media/backups/uploads
 backup_file=$TMPDIR/backup.zip
 
 echo -n "Create Zip Archive"
